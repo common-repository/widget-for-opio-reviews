@@ -1,0 +1,2757 @@
+/*-------------------------------- WP Overrides --------------------------------*/
+.opio-admin #wpcontent {
+    padding: 0;
+}
+
+.opio-reviews_page_opio-builder #wpcontent,
+.opio-admin.opio-reviews_page_opio-builder #wpcontent {
+    padding-right: 300px;
+}
+
+.opio-reviews_page_opio-slider #wpcontent,
+.opio-admin.opio-reviews_page_opio-slider #wpcontent {
+    padding-right: 300px;
+}
+
+.toplevel_page_opio .wp-menu-image img {
+    width: 18px;
+}
+
+.opio-admin.edit-php #wpbody {
+    color: #5d6f80;
+    padding-left: 20px;
+    position: relative;
+}
+
+.opio-admin.edit-php #wpbody .wp-header-end,
+.opio-admin.post-new-php #wpbody .wp-header-end,
+.opio-admin.post-php #wpbody .wp-header-end {
+    margin-top: 6px;
+}
+
+.opio-admin .update-nag {
+    margin: 20px 0 0 20px;
+}
+
+.opio-admin.edit-php .update-nag {
+    margin: 20px 20px 0 0;
+}
+
+.opio-admin.edit-php .update-nag ~ .update-nag {
+    margin-left: 0;
+}
+
+.opio-admin #wpbody #screen-meta-links {
+    display:none
+}
+
+.opio-admin #screen-meta {
+    background-color: #ecf0f1;
+    border: 0;
+    margin: 0;
+}
+
+.opio-admin #screen-meta-links {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+/*-------------------------------- Top Header --------------------------------*/
+.opio-tophead {
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -webkit-box-sizing: border-box;
+    align-items: center;
+    background-color: #fff;
+    border-bottom: 1px solid #cfd9db;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    top: 46px;
+    width: 100%;
+}
+
+@media (min-width: 601px) {
+    .opio-tophead {
+        -ms-flex-align: stretch;
+        -webkit-align-items: stretch;
+        -webkit-box-align: stretch;
+        align-items: stretch;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        top: 0;
+    }
+}
+
+.opio-tophead img {
+    width: 32px;
+    margin: 0 4px 0 0;
+    vertical-align: middle;
+}
+
+.opio-tophead-title {
+    padding: 0;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.opio-page-title {
+    font-size: 23px;
+    font-weight: 400;
+    margin: 0;
+    padding: 20px 0 0 20px;
+    line-height: 29px;
+}
+
+.opio-version {
+  position: absolute;
+  top: 6px;
+  right: 16px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  display: inline-block;
+  margin: 12px 0 0;
+  padding: 6px 10px;
+  font-size: 12px;
+  line-height: 14px;
+  color: #FFF;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  white-space: nowrap;
+  vertical-align: baseline;
+  background-color: #999;
+}
+
+/*-------------------------------- Builder page --------------------------------*/
+.opio-toolbar {
+    padding: 15px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #cfd9db;
+}
+
+@media (min-width: 783px) {
+    .opio-toolbar {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+}
+
+.opio-toolbar-title {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    margin-bottom: 0;
+    margin-right: 20px;
+    min-width: 0;
+}
+
+.opio-toolbar-title-input {
+    background-color: transparent!important;
+    border: none!important;
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important;
+    width: 100%;
+}
+
+.opio-toolbar-title-input {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.4em;
+    margin: 0;
+    padding: 0;
+}
+
+.opio-toolbar-control {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.opio-toolbar-control button {
+    margin-left: 20px!important;
+}
+
+.opio-toolbar-control input[type="text"] {
+    width: 200px;
+    height: 34px;
+    font-size: 14px;
+}
+
+.opio-toolbar-options label {
+    display: block;
+    padding: 0 0 0 4px;
+}
+
+/* hide post content (json) in title column */
+.opio-admin .type-opio_collection .title.column-title {
+    font-size: 0;
+}
+.opio-admin .type-opio_collection .title.column-title strong,
+.opio-admin .type-opio_collection .title.column-title .row-actions {
+    line-height: 1.5em;
+}
+
+.opio-builder-workspace, .opio-slider-workspace{
+    display: block;
+    position: relative;
+    width: 100%;
+    overflow-y: hidden;
+    box-sizing: border-box;
+}
+
+.opio-builder-preview, .opio-slider-preview{
+    font-size: 14px;
+    grid-area: preview;
+    min-height: 0;
+    min-width: 0;
+    padding: 20px;
+    line-height: 1.75;
+}
+
+.opio-builder-options, .opio-slider-options{
+    box-sizing: border-box;
+    position: fixed;
+    top: 32px;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    overflow: hidden;
+    transition: all 0.3s;
+    z-index: 1;
+    overflow-y: auto;
+    background: #fafafa;
+}
+
+.wp-gr .wp-review-hidden {
+    opacity: .5 !important;
+}
+
+.wp-gr .wp-review-hide {
+    color: #fff !important;
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    line-height: 26px !important;
+    text-decoration: none !important;
+    text-transform: uppercase !important;
+    padding: 2px 8px !important;
+    border-radius: 3px !important;
+    border-color: #0062cc !important;
+    background-color: #427fbf !important;
+}
+
+.wp-gr .wp-review-hide:hover {
+    background-color: #1d62ab !important;
+}
+
+/*-------------------------------- Settings page --------------------------------*/
+.nav-tab.nav-tab-active {
+    box-shadow: none;
+    background: #fff;
+    border-bottom-color: #fff;
+}
+
+.opio-settings-workspace {
+    font-size: 14px;
+    margin: 20px;
+    padding: 20px;
+    background: #fff;
+}
+
+.opio-settings-workspace p {
+    font-size: 14px;
+}
+
+.opio-settings-workspace .opio-alert {
+    max-width: 500px;
+    word-wrap: break-word;
+}
+
+.opio-warn {
+    padding: 10px;
+    margin: 20px 0 10px;
+    font-size: 15px;
+    line-height: 26px;
+    font-weight: 600;
+    color: #000;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #ffeb3b;
+}
+
+/*-------------------------------- Support page --------------------------------*/
+.opio-support-question {
+    padding-bottom: 10px;
+}
+
+.opio-support-workspace {
+    font-size: 15px;
+    line-height: 22px;
+    margin: 20px;
+    padding: 20px;
+    background: #fff;
+}
+
+.opio-support-workspace p {
+    font-size: 15px;
+}
+
+.opio-support-workspace #fig p {
+    line-height: 24px;
+}
+
+.opio-support-workspace img {
+    width: 100%;
+}
+
+.opio-support-workspace .subheader {
+    color: #4b76b7;
+    margin: 40px 0 20px;
+    text-decoration: underline;
+}
+
+.opio-support-workspace .opio-flex-col > b:first-child,
+.opio-support-workspace .opio-flex-col3 > b:first-child {
+    padding: 2px 8px;
+    margin-right: 4px;
+    border-radius: 50%;
+    color: #fff;
+    background: #36ad55;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 26%);
+}
+
+.box-img {
+    padding: 15px;
+    margin: 0 0 10px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
+}
+
+/*-------------------------------- Full Installation Guide --------------------------------*/
+#fig hr {
+    border-top: 1px solid #bbb;
+    border-bottom: 2px solid #eee;
+}
+
+#fig .opio-flex-row {
+    align-items: center!important;
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+#fig .opio-flex-col,
+#fig .opio-flex-col3 {
+    padding: 0 20px;
+    line-height: 24px;
+}
+
+#fig .opio-flex-col:first-child,
+#fig .opio-flex-col3:first-child {
+    padding-right: 10px;
+}
+
+#fig img {
+    width: 100%;
+}
+
+#fig .subheader {
+    color: #4b76b7;
+    margin: 40px 0 20px;
+    text-decoration: underline;
+}
+
+#fig .opio-flex-col > b:first-child,
+#fig .opio-flex-col3 > b:first-child {
+    padding: 2px 8px;
+    margin-right: 4px;
+    border-radius: 50%;
+    color: #fff;
+    background: #36ad55;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 26%);
+}
+
+/*-------------------------------- Field --------------------------------*/
+.opio-field,
+.opio-field * {
+    box-sizing: border-box;
+}
+
+.opio-field {
+    padding: 0 0 15px 0;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-bottom: 1px dashed #ddd;
+}
+
+@media (min-width: 600px) {
+    .opio-field {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .opio-field-label {
+        flex: 0 0 25%;
+        padding-right: 4%;
+    }
+    .opio-field-option {
+        flex: 0 0 75%;
+    }
+}
+
+.opio-field input[type="text"] {
+    margin: 0;
+    padding: 5px 8px;
+    border-radius: 2px;
+}
+
+.opio-field select {
+    width: 15em;
+    margin-left: 0;
+}
+
+/*-------------------------------- Flex row/col --------------------------------*/
+.opio-flex-row {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+}
+
+.opio-flex-col,
+.opio-flex-col3 {
+    box-sizing: border-box;
+}
+
+.opio-flex-col:first-child,
+.opio-flex-col3:first-child,
+.opio-flex-col3 + .opio-flex-col3 {
+    padding-right: 10px;
+}
+
+@media (min-width: 700px) {
+    .opio-flex-col {
+        width: 50%;
+    }
+    .opio-flex-col3 {
+        width: 30%;
+    }
+    .opio-flex-col6 {
+        width: 66.7%;
+    }
+    .opio-flex-col7 {
+        width: 70%;
+    }
+}
+
+/*-------------------------------- Alert --------------------------------*/
+.opio-alert {
+    font-size: 14px;
+    line-height: 1.846;
+    border: none;
+    color: #fff;
+    padding: 15px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+}
+
+.opio-alert-dismissable,
+.opio-alert-dismissible {
+    padding-right: 35px;
+}
+
+.opio-alert-success {
+    color: #fff;
+    border-color: #d6e9c6;
+    background-color: #4caf50;
+}
+
+.opio-alert-warning {
+    background-color: #a22525;
+}
+
+.opio-alert a:not(.close),
+.opio-alert .alert-link {
+    color: #fff;
+    font-weight: bold;
+}
+
+/*-------------------------------- Widgets Builder --------------------------------*/
+.opio-builder-platforms, .opio-slider-platforms{
+    position: relative;
+    box-sizing: border-box;
+}
+
+/*.opio-platform-google .opio-builder-top {
+    color: #e7711b;
+}
+
+.opio-platform-facebook .opio-builder-top {
+    color: #3c5b9b;
+}
+
+.opio-platform-yelp .opio-builder-top {
+    color: #d32323;
+}*/
+
+.opio-builder-top, .opio-slider-top{
+    padding: 10px;
+    color: #23282d;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.4em;
+    cursor: pointer;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+    background: #fafafa url('../img/button-down-black.svg') no-repeat right;
+}
+
+.opio-builder-top:hover, .opio-slider-top:hover{
+    border-color: #999;
+    box-shadow: 0 1px 2px rgba(0,0,0,.1);
+}
+
+.opio-builder-inside, .opio-slider-inside{
+    border-top: none;
+    padding: 10px 10px 0;
+    line-height: 16px;
+    background: #fff;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}
+
+.opio-builder-first, .opio-slider-first{
+    padding-bottom: 5px;
+    font-size: 14px;
+}
+
+.opio-builder-inside .opio-builder-option, .opio-slider-inside .opio-slider-option{
+    margin: 10px 0 0;
+    position: relative;
+}
+
+.opio-builder-inside .opio-builder-option:first-child, .opio-slider-inside .opio-slider-option:first-child{
+    margin-top: 0;
+}
+
+.opio-builder-inside .opio-builder-option:last-child, .opio-slider-inside .opio-slider-option:last-child{
+    margin-bottom: 10px;
+}
+
+.opio-builder-inside input[type="text"],
+.opio-builder-inside select,
+.opio-builder-inside button,
+.opio-builder-inside textarea,
+.opio-slider-inside input[type="text"],
+.opio-slider-inside select,
+.opio-slider-inside button,
+.opio-slider-inside textarea {
+    width: 100%;
+    clear: both;
+    border-spacing: 0;
+}
+
+.opio-builder-inside pre, .opio-slider-inside pre{
+    margin: 0;
+    color: #b73434;
+    font-size: 10px;
+    line-height: 16px;
+    padding: 4px;
+    background: #fff;
+    overflow: auto;
+}
+
+.opio-builder-connect, .opio-slider-connect{
+    margin: 0 0 10px;
+    padding: 6px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    background: #eee;
+}
+
+.opio-builder-connect.opio-connect-google, .opio-slider-connect.opio-connect-google{
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    background: #fa8e08;
+}
+
+.opio-connect-google-inside {
+    padding: 0 1px;
+}
+
+.opio-builder-connect.opio-connect-facebook, .opio-slider-connect.opio-connect-facebook{
+    background: #3c5b9b;
+}
+
+.opio-builder-connect.opio-connect-tripadvisor, .opio-slider-connect.opio-connect-tripadvisor{
+    background: #3eca77;
+}
+
+.opio-builder-connect.opio-connect-yelp, .opio-slider-connect.opio-connect-yelp{
+    margin-bottom: 0;
+    background: #d32323;
+}
+
+.opio-builder-connect.opio-connect-google + div,
+.opio-builder-connect.opio-connect-yelp + div, 
+.opio-slider-connect.opio-connect-google + div,
+.opio-slider-connect.opio-connect-yelp + div {
+    margin-top: 10px;
+}
+
+.opio-connections {
+    padding-bottom: 10px;
+}
+
+.opio-connection {
+    cursor: move;
+}
+
+.opio-connect-business {
+    color: #333;
+    text-align: left;
+    margin: 10px 0 0;
+    border: 1px solid #ccc;
+    background: #fafafa url(../img/button-down-black.svg) no-repeat right;
+}
+
+.opio-connect-business + div {
+    padding: 4px;
+    border: 1px solid rgb(204, 204, 204);
+    border-top: 0;
+}
+
+.opio-connect-select {
+    display: none!important;
+}
+
+.opio-platform-multiple .opio-connect-select {
+    display: inline-block!important;
+}
+
+.opio-connect-photo {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    vertical-align: middle;
+}
+
+.opio-connect-photo-change {
+    margin-right: 10px
+}
+
+.opio-connect-error {
+  color: #e60909;
+  font-size: 13px;
+}
+
+.opio-connection-checkbox {
+    display: none;
+    margin: 10px 0 0 6px;
+}
+
+.opio-platform-multiple .opio-connection-checkbox {
+    display: block;
+}
+
+.opio-quest {
+    position: absolute;
+    top: 6px;
+    right: 3px;
+    width: 16px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    background: #eee;
+}
+
+.opio-quest.opio-quest-top {
+    top: 0;
+}
+
+.opio-quest.opio-quest-top22 {
+    top: 22px;
+}
+
+.opio-quest:hover {
+    border: 1px solid #999;
+}
+
+.opio-quest-help {
+    display: none;
+    margin: 0 0 10px 0;
+    padding: 4px;
+    font-size: 13px;
+    line-height: 18px;
+    background: #eee;
+}
+
+.opio-well {
+    padding: 10px;
+    margin: 10px 0px;
+    border-radius: 3px;
+    border: 1px solid #d9d9d9;
+    background: #f1f1f1;
+}
+
+#rating_temp {
+    height: 260px;
+    font-size: 12px;
+    word-break: break-all;
+}
+
+/** Slider css*/
+
+.opio-more-reviews-required {
+    display: flex;
+    justify-content: start;
+}
+
+.opio-more-error-note {
+    font-size: 24px;
+    font-weight: 500;
+    color: rgb(220, 78, 65);
+    font-family: 'Roboto', 'Sans-sarif';
+}
+
+.react-stars-04811029757080685:before {
+    position: absolute;
+    overflow: hidden;
+    display: block;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 50%;
+    content: attr(data-forhalf);
+}
+
+/** Horizontal slider styles starts here*/
+
+.admin-widget-body {
+    /* padding: 40px; */
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    max-width: 1140px;
+    width: auto;
+    height: auto;
+    overflow: hidden; /* Prevent scrolling when the lightbox is open */
+    background-color: white;
+}
+
+#photo-lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#close-button {
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.admin-widget-body .slider-container {
+    display: flex;
+    height: auto;
+    overflow-x: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #ccc #f0f0f0;
+    padding: 0px;
+    background: #ffffff;
+    margin: 0 -0.7% 0 -0.9%;
+    justify-content: center;
+    transition: transform 0.5s ease-in-out;
+}
+
+.admin-widget-body .reviewer-container {
+    display: flex; 
+    position: relative;
+}
+
+.admin-widget-body .avatar-container {
+    vertical-align: top; 
+    padding-right: 10px;
+}
+
+.admin-widget-body .reviewer-avatar {
+    width: 35px; 
+    height: 35px; 
+    line-height: 35px; 
+    border-radius: 50%; 
+    color: rgb(255, 255, 255); 
+    font-size: 20px; 
+    text-align: center; 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+}
+
+.admin-widget-body .facebook-logo {
+    position: absolute; 
+    right: -1px; 
+    top: -2px; 
+    text-align: right; 
+    min-width: 70px; 
+    min-height: 24px; 
+    background-size: contain; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    margin-right: 0px;
+}
+
+.admin-widget-body .google-logo {
+    position: absolute; 
+    right: -15px; 
+    top: 2px; 
+    text-align: right; 
+    min-width: 90px; 
+    min-height: 20px; 
+    background-size: contain; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    margin-right: 0px;
+}
+
+.admin-widget-body .yelp-logo {
+    position: absolute; 
+    right: -25px; 
+    top: 2px; 
+    text-align: right; 
+    min-width: 100px; 
+    min-height: 24px; 
+    background-size: contain; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    margin-right: 0px;
+}
+
+.admin-widget-body .tripadvisor-logo {
+    position: absolute; 
+    right: -2px; 
+    top: 0px; 
+    text-align: right; 
+    min-width: 100px; 
+    min-height: 24px; 
+    background-size: contain; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    margin-right: 0px;
+}
+
+.admin-widget-body .opio-logo {
+    position: absolute; 
+    right: -25px; 
+    top: 2px; 
+    text-align: right; 
+    min-width: 100px; 
+    min-height: 24px; 
+    background-size: contain; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    margin-right: 0px;
+}
+
+.admin-widget-body .rating-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.admin-widget-body .fb-rating-div {
+    display: inline-flex; 
+    align-items: center; 
+    vertical-align: middle;
+}
+
+.admin-widget-body .fb-rating-img {
+    padding-right: 5px; 
+    width: 20px; 
+    height: 20px; 
+    padding-top: 2px;
+}
+
+.admin-widget-body .fb-rating-text-p {
+    margin: 0;
+    font-weight: 700; 
+    font-size: 12px; 
+    color: #333333;
+    white-space: nowrap;
+}
+
+.admin-widget-body .fb-rating-text-n {
+    margin: 0;
+    font-weight: 700; 
+    font-size: 13px; 
+    color: #333333;
+    white-space: nowrap;
+}
+
+.admin-widget-body .opio-rating-container {
+    overflow: hidden; 
+    position: relative;
+}
+
+.admin-widget-body .rating-widget-part {
+    display: flex; 
+    background: #ffffff; 
+    height: 40px; 
+    align-items: flex-start; 
+    justify-content: center; 
+    gap: 10px;
+    line-height: 18px;
+    padding: 20px 20px 0px 20px;
+}
+
+.admin-widget-body .rating-stars {
+    position: relative; 
+    overflow: hidden; 
+    cursor: pointer; 
+    display: block; 
+    float: left; 
+    width: 15px; 
+    height: 16px;
+}
+
+.admin-widget-body .rating-stars-v {
+    position: relative; 
+    overflow: hidden; 
+    cursor: pointer; 
+    display: block; 
+    float: left; 
+    width: 18px; 
+    height: 18px;
+}
+
+.admin-widget-body .rating-stars-wd {
+    position: relative; 
+    overflow: hidden; 
+    cursor: pointer; 
+    display: block; 
+    float: left; 
+    width: 18px; 
+    height: 18px;
+}
+
+.admin-widget-body .rating-stars-wd-v {
+    position: relative; 
+    overflow: hidden; 
+    cursor: pointer; 
+    display: block; 
+    float: left; 
+    width: 24px; 
+    height: 24px;
+}
+
+.admin-widget-body .rating-stars-wd-c {
+    position: relative; 
+    overflow: hidden; 
+    cursor: pointer; 
+    display: block; 
+    float: left; 
+    width: 20px; 
+    height: 20px;
+}
+
+.admin-widget-body .reviewer-name-container {
+    font-size: 12px; 
+    color: #333333;
+}
+
+.admin-widget-body .opio-logo-container, .admin-widget-body .w-opio-logo-container {
+    display: flex; 
+    align-items: center;
+}
+
+.admin-widget-body .pwd-opio-logo {
+    display: flex; 
+    align-items: center; 
+    min-width: 100px; 
+    min-height: 40px; 
+    background-size: contain; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    margin-left: 5px;
+}
+
+.admin-widget-body .review-tile {
+    /* flex: 0 0 250px; */
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    flex: 0 0 33.33%;
+    background-color: #f5f5f7;
+    padding: 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.admin-widget-body .location-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333333;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 3px;
+    padding-bottom: 5px;
+}
+
+.admin-widget-body .review-content {
+    flex: 1;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333333;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+}
+
+.admin-widget-body .reviewer-name {
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: 5px;
+    color: #333333;
+    margin-bottom: 5px;
+}
+
+.admin-widget-body .review-media {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    margin-top: 30px;
+}
+
+.admin-widget-body .review-media-images {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 15px;
+}
+
+.admin-widget-body .review-img{
+    width: 48px; 
+    height: 48px;
+}
+
+.admin-widget-body .video-icon {
+    width: 80px;
+    height: 48px;
+    position: relative;
+    background-color: grey;
+    border-radius: 8px;
+}
+
+.admin-widget-body .play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 15px solid #fff;
+}
+
+.admin-widget-body .tile-tag-container {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    bottom: 0;
+}
+
+.admin-widget-body .review-tagged-emps{
+    display: flex;
+    margin-bottom: 15px;
+    border: 1px solid #333333;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.admin-widget-body .emp-avatar {
+    width: 40px; 
+    height: 40px; 
+    line-height: 40px; 
+    border-radius: 50%; 
+    color: white; 
+    font-size: 24px; 
+    text-align: center; 
+    background-size: cover; 
+    background-repeat: no-repeat;
+}
+
+.admin-widget-body .vertical-divider {
+    height: 42px;
+    width: 1px;
+    background-color: #9b9b9b; /* Change the color as needed */
+    margin: 0px 10px;
+}
+
+.admin-widget-body .rating-widget {
+    display: flex; 
+    flex-direction: column;
+    gap: 5px;
+}
+
+.admin-widget-body .w-rating-box {
+    display: flex;
+}
+
+.admin-widget-body .w-pwd-text {
+    font-size: 12px;
+}
+
+.admin-widget-body .rating-text-div {
+    display: flex; 
+    margin-left: 5px;
+}
+
+.admin-widget-body .rating-text {
+    display: flex; 
+    margin-top: 1px; 
+    font-size: 24px; 
+    font-weight: 700;
+}
+
+.admin-widget-body .see-all-box {
+    display: flex; 
+    margin-top: 0px;
+}
+
+.admin-widget-body .see-all-text {
+    display: flex; 
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.admin-widget-body a,
+.admin-widget-body a:visited {
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+.admin-widget-body a:hover,
+.admin-widget-body a:visited:hover {
+    text-decoration: underline;
+}
+
+.admin-widget-body ::selection {
+    background-color: #555555; /* Change the background color for selected text */
+    color: #ffffff; /* Change the text color for selected text */
+}
+
+.admin-widget-body .write-review-btn-box {
+    display: flex; 
+    margin-left: 5px;
+}
+
+.admin-widget-body .write-review-btn-box {
+    display: flex; 
+    margin-left: 5px;
+}
+
+.admin-widget-body .write-review-btn-div {
+    width: 100%; 
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center; 
+    padding: 0px 8px; 
+    text-align: center;
+}
+
+.admin-widget-body .write-review-btn-a {
+    text-decoration: none; 
+    color:inherit
+}
+
+.admin-widget-body .write-review-btn {
+    border-radius: 2px; 
+    display: inline-block; 
+    height: 40px; 
+    line-height: 40px; 
+    margin-left: 0px; 
+    text-align: center; 
+    cursor: pointer; 
+    padding: 0px; 
+    font-weight: 400; 
+    font-size: 14px; 
+    color: #ffffff; 
+    border: none; 
+    background-color: #0078ca; 
+    width: 150px; 
+    position: relative; 
+    transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1); 
+    user-select: none;
+}
+
+.admin-widget-body .write-review-text {
+    display: inline-block; 
+    position: relative; 
+    height: 100%;
+}
+
+.admin-widget-body .slider-navigation {
+    display: flex;
+    align-items: center;
+    margin-top: 3px;
+}
+
+.admin-widget-body .slider-button {
+    width: 36px;
+    height: 36px;
+    margin: 0 2px;
+    cursor: pointer;
+}
+
+.admin-widget-body .close-button {
+    color: white;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border: 5px solid #ccc;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    position: fixed;
+    top: 15%;
+    right: 20%;
+}
+
+.admin-widget-body .star-rating {
+    font-size: 18px;
+    color: #FFD700; /* Gold color for stars */
+}
+
+.admin-widget-body .photo-tiles {
+    display: flex;
+    margin-top: 10px;
+}
+
+.admin-widget-body .photo-tile {
+    flex: 0 0 40px;
+    margin-right: 5px;
+}
+
+.admin-widget-body .photo-tile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+/** lightbox style*/
+.lb-reviewer-avatar {
+    width: 40px; 
+    height: 40px; 
+    line-height: 40px; 
+    border-radius: 50%; 
+    color: rgb(255, 255, 255); 
+    font-size: 24px; 
+    text-align: center; 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+}
+
+.lb-reviewbox {
+    padding: 20px;
+    background-color: #f5f5f7;
+    width: auto;
+    height: auto;
+    max-width: 800px;
+    border-radius: 5px;
+    /* max-height: 600px; */
+}
+
+.lb-review-avatar {
+    display: flex;
+}
+
+.lb-review-content-container {
+    flex: 0 0 80%;
+    margin-left: 5px;
+}
+
+.lb-review-rating {
+    display: flex;
+    margin-left: 5px;
+}
+
+.lb-reviwer-box {
+    display: flex;
+    margin-left: 10px;
+    text-align: left;
+}
+
+.lb-reviewer-div {
+    font-size: 12px; 
+    color: #333333;
+}
+
+.lb-review-content {
+    font-size: 14px; 
+    color: #333333;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+}
+
+.lb-photo-div {
+    display: flex; 
+}
+
+.lb-review-property {
+    display: flex;
+    width: 240px;
+    justify-content: flex-end;
+    align-content: flex-start;
+}
+
+.lb-property-logo {
+    display: flex; 
+    position: fixed; 
+    text-align: right; 
+    min-width: 80px; 
+    min-height: 28px; 
+    background-size: contain; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    margin-right: 0px;
+}
+
+.lb-reviewer-name {
+    font-size: 14px;
+    font-weight: 700;
+    color: #333333;
+    margin-bottom: 5px;
+}
+
+.lb-reviewtext {
+    display: flex;
+    margin-left: 10px;
+    font-size: 14px;
+    color: #333333;
+    text-align: left;
+    margin-top: 5px;
+    max-height: 300px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.lb-review-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.lb-rating-stars {
+    position: relative; 
+    overflow: hidden; 
+    cursor: pointer; 
+    display: block; 
+    float: left; 
+    width: 20px; 
+    height: 20px;
+}
+
+.lb-empTagCard {
+    display: grid; 
+    width: 100%;
+    grid-template-columns: 20% 80%; 
+    border: 1px solid #E6E8EB; 
+    border-radius: 5px; 
+    padding: 10px
+}
+
+.lb-empTagContainer {
+    display: grid; 
+    grid-template-rows: auto; 
+    grid-template-columns: 50% 50%;
+    margin-top: 10px; 
+    margin-bottom: 10px; 
+    grid-gap: 10px;
+}
+
+.lb-large-img {
+    display: inline-block; 
+    width: 98.5%; 
+    height: 400px; 
+    background-position: center center; 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    margin: 5px; 
+    text-align: center; 
+    opacity: 1; 
+    transition: opacity 1s ease 0s;
+}
+
+.lb-large-img-div {
+    position: absolute; 
+    z-index: 1; 
+    top: 40%; 
+    right: 0px; 
+    width: 5%; 
+    margin: 25px;
+}
+
+.lb-fb-rating-div {
+    display: inline-flex; 
+    align-items: center; 
+    vertical-align: middle;
+}
+
+.lb-fb-rating-img {
+    padding-right: 5px; 
+    width: 20px; 
+    height: 20px; 
+    padding-top: 2px;
+}
+
+.lb-fb-rating-text-p {
+    margin: 0;
+    font-weight: 700; 
+    font-size: 12px; 
+    color: #333333;
+    white-space: nowrap;
+}
+
+.lb-b-rating-text-n {
+    margin: 0;
+    font-weight: 700; 
+    font-size: 13px; 
+    color: #333333;
+    white-space: nowrap;
+}
+
+.lb-opio-rating-container {
+    overflow: hidden; 
+    position: relative;
+}
+
+.lb-emp-tag {
+    margin-left: 10px;
+}
+
+.lb-empTagContainer {
+    display: grid; 
+    grid-template-columns: 32% 32% 32%; 
+    margin-top: 10px; 
+    margin-bottom: 10px; 
+    grid-gap: 10px;
+}
+
+.lb-emp-avatar {
+    width: 35px; 
+    height: 35px; 
+    line-height: 35px; 
+    border-radius: 50%; 
+    color: white; 
+    font-size: 20px; 
+    text-align: center; 
+    background-size: cover; 
+    background-repeat: no-repeat;
+}
+
+.lb-emp-name-div {
+    display: grid;
+    grid-template-columns: 25px;
+}
+
+.lb-emp-name-span {
+    align-self: end;
+    justify-self: left;
+    margin-left: 10px;
+    color: #333333;
+    font-size: 14px;
+}
+
+.lb-emp-position-div {
+    display: grid;
+    grid-template-rows: 20px 15px;
+}
+
+.lb-emp-position-name-span {
+    align-self: end;
+    justify-self: left;
+    margin-left: 10px;
+    color: #333333;
+    font-size: 14px;
+}
+
+.lb-emp-position-span {
+    align-self: top;
+    justify-self: left;
+    margin-left: 10px;
+    margin-top: -2px;
+    color: #333333;
+    font-size: 12px;
+}
+
+.lb-emp-mention {
+    display: flex; 
+    color: #333333; 
+    font-size: 14px; 
+    font-weight: 500; 
+    margin-top: 5px;
+}
+
+.lb-small-img {
+    display: inline-block;
+    width: 72px;
+    height: 72px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 5px;
+    text-align: center;
+}
+
+.lb-video-player {
+    width: 100%; 
+    height: auto; 
+    margin: 5px; 
+    transition: width 1s ease-out 0s, height 1s ease-out 0s;
+}
+
+.lightbox-photo-tile {
+    width: 400px;
+    height: 400px;
+    margin-right: 5px;
+}
+
+.lightbox-photo-tile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.lb-comment-header {
+    display: flex;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 10px;
+    color: #333333;
+    margin-top: 10px;
+}
+
+.lb-comment-box {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.lb-comment-avatar {
+    width: 35px; 
+    height: 35px; 
+    min-width: 35px; 
+    min-height: 35px;
+    line-height: 35px; 
+    border-radius: 50%; 
+    color: rgb(255, 255, 255); 
+    font-size: 20px; 
+    text-align: center; 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+}
+
+.lb-comment-content-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-left: 10px;
+}
+
+.lb-by-comment-name {
+    display: flex;
+    justify-content: start;
+    font-size: 12px;
+    font-weight: 400;
+    color: #333333;
+}
+
+.lb-by-name-span {
+    font-size: 12px;
+    font-weight: 600;
+    color: #333333;
+}
+
+.lb-comment-content {
+    font-size: 14px;
+    font-weight: 400;
+    color: #333333;
+    text-align: left;
+}
+/** Horizontal slider styles ends here*/
+
+/** Vertical slider styles starts here*/
+
+.opio-vertical {
+    display: flex;
+    height: 500px;
+    width: 300px;
+    flex-direction: column;
+    border: 2px solid #A9B7BF;
+    border-radius: 3px;
+    margin: 0;
+    padding: 0;
+}
+
+.admin-widget-body .testimonial-slider.vertical-slider {
+    padding: 0px;
+    height: 280px;
+    overflow: hidden;
+    margin-top: 0px;
+}
+
+.admin-widget-body .v-header {
+    display: flex; 
+    background: #A9B7BF; 
+    padding:  15px; 
+    color: white;
+}
+
+.admin-widget-body .v-h-col-1 {
+    display: flex; 
+    justify-content: flex-start;
+    align-items: center;
+    flex: 60% 0;
+}
+
+.admin-widget-body .v-h-col-2 {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    margin-left: 20px; 
+    margin-top: -7px;
+    padding-top: 5px;
+}
+
+.admin-widget-body .v-biz-span {
+    font-size: 22px; 
+    margin-top: -7px;
+}
+
+.admin-widget-body .v-pwd-span {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.admin-widget-body .v-h-opio-logo {
+    display: flex; 
+    align-items: center; 
+    min-width: 100px; 
+    min-height: 32px; 
+    background-size: contain; 
+    background-position: center center; 
+    background-repeat: no-repeat;
+}
+
+.admin-widget-body .v-rating-container {
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    padding-top: 5px;
+    height: 75px;
+    justify-content: space-around;
+}
+
+.admin-widget-body .v-r-col-1 {
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.admin-widget-body .v-r-col-2 {
+    display: flex;
+    align-content: flex-end;
+    justify-content: center;
+}
+
+.admin-widget-body .v-r-row-1 {
+    display: flex; 
+    flex-direction: row;
+}
+
+.admin-widget-body .v-rating-span {
+    display: flex;
+    margin-top: 0px;
+    font-size: 50px;
+    font-weight: 700;
+    color: #333333;
+    justify-content: flex-end;
+    line-height: 65px;
+}
+
+.admin-widget-body .v-see-all-span {
+    display: flex;
+    font-size: 14px;
+    color: #333333;
+}
+
+.admin-widget-body .review-tile-vertical {
+    flex: 0 0 250px;
+    background-color: white;
+    height: 140px !important;
+    padding: 10px;
+    margin: 0 10px;
+    cursor: pointer;
+    border-top: 2px solid #E6E6E6 !important;
+    border-bottom: 2px solid #E6E6E6 !important;
+    transition: transform 0.3s ease-in-out;
+}
+
+.admin-widget-body .v-review-tile-container {
+    display: flex; 
+    position: relative;
+    width: 260px;
+}
+
+.admin-widget-body .v-rev-content {
+    vertical-align: top; 
+    padding-right: 10px;
+}
+
+.admin-widget-body .v-rev-rating-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.admin-widget-body .v-reviewer-avatar {
+    width: 35px; 
+    height: 35px; 
+    line-height: 35px; 
+    border-radius: 50%; 
+    color: rgb(255, 255, 255); 
+    font-size: 20px; 
+    text-align: center; 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+}
+
+.admin-widget-body .v-facebook-logo {
+    position: absolute; 
+    right: -6px; 
+    top: -2px; 
+    display: flex; 
+    text-align: right; 
+    min-width: 70px; 
+    min-height: 24px; 
+    background-size: contain; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    margin-right: 0px;
+}
+
+.admin-widget-body .v-google-logo {
+    position: absolute; 
+    right: -15px; 
+    top: 0px; 
+    display: flex; 
+    text-align: right; 
+    min-width: 90px; 
+    min-height: 20px; 
+    background-size: contain; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    margin-right: 0px;
+}
+
+.admin-widget-body .v-yelp-logo {
+    position: absolute; 
+    right: -15px; 
+    top: 2px; 
+    display: flex; 
+    text-align: right; 
+    min-width: 90px; 
+    min-height: 20px; 
+    background-size: contain; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    margin-right: 0px;
+}
+
+.admin-widget-body .v-tripadvisor-logo {
+    position: absolute; 
+    right: -6px; 
+    top: 2px; 
+    display: flex; 
+    text-align: right; 
+    min-width: 90px; 
+    min-height: 20px; 
+    background-size: contain; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    margin-right: 0px;
+}
+
+.admin-widget-body .v-opio-logo {
+    position: absolute; 
+    right: -25px; 
+    top: 2px; 
+    display: flex; 
+    text-align: right; 
+    min-width: 100px; 
+    min-height: 24px; 
+    background-size: contain; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    margin-right: 0px;
+}
+
+.admin-widget-body .v-footer {
+    display: flex;
+    background: #ffffff;
+    height: 60px;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: row; 
+    padding: 15px;
+}
+
+.admin-widget-body .v-f-col-1 {
+    display: flex;
+    align-items: center;
+    margin-top: 3px;
+    margin: 0 auto;
+}
+
+.admin-widget-body .v-f-col-2 {
+    display: flex; 
+    margin-left: 5px;
+}
+
+.admin-widget-body .v-slider-button {
+    width: 36px;
+    height: 36px;
+    margin: 0 2px;
+    cursor: pointer;
+}
+
+.admin-widget-body .v-wrire-rev-container {
+    width: 100%; 
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center; 
+    padding: 0px 8px; 
+    text-align: center;
+}
+
+.admin-widget-body .v-wrire-rev-a {
+    text-decoration: none; 
+    color:inherit  
+}
+
+.admin-widget-body .v-write-rev-div {
+    border-radius: 2px; 
+    display: inline-block; 
+    height: 40px; 
+    line-height: 40px; 
+    margin-left: 0px; 
+    text-align: center; 
+    cursor: pointer; 
+    padding: 0px; 
+    font-weight: 400; 
+    font-size: 14px; 
+    color: #ffffff; 
+    border: none; 
+    background-color: #0078ca; 
+    width: 150px; 
+    position: relative; 
+    transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1); 
+    user-select: none;
+}
+
+.admin-widget-body .v-write-rev-div-2 {
+    display: inline-block; 
+    position: relative; 
+    height: 100%;
+}
+
+/** Vertical slider styles ends here*/
+
+/** Horizontal carousel slider styles starts here*/
+
+.admin-opio-carousel {
+    display: flex;
+    height: auto;
+    padding: 0px;
+    gap: 20px;
+}
+
+.admin-widget-body .c-facebook-logo {
+    background-image: url('../img/facebook-logo.png');
+    position: absolute; 
+    right: -6px; 
+    top: -2px; 
+    display: flex; 
+    text-align: right; 
+    min-width: 70px; 
+    min-height: 24px; 
+    background-size: contain; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    margin-right: 0px;
+}
+
+.admin-widget-body .c-google-logo {
+    background-image: url('../img/google-logo.svg');
+    position: absolute; 
+    right: -20px; 
+    top: 2px; 
+    display: flex; 
+    text-align: right; 
+    min-width: 90px; 
+    min-height: 20px; 
+    background-size: contain; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    margin-right: 0px;
+}
+
+.admin-widget-body .c-yelp-logo {
+    background-image: url('../img/yelp-logo.png');
+    position: absolute; 
+    right: -30px; 
+    top: 2px; 
+    display: flex; 
+    text-align: right; 
+    min-width: 90px; 
+    min-height: 20px; 
+    background-size: contain; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    margin-right: 0px;
+}
+
+.admin-widget-body .c-tripadvisor-logo {
+    background-image: url('../img/tripadvisor-logo.png');
+    position: absolute; 
+    right: -10px; 
+    top: 2px; 
+    display: flex; 
+    text-align: right; 
+    min-width: 90px; 
+    min-height: 20px; 
+    background-size: contain; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    margin-right: 0px;
+}
+
+.admin-widget-body .c-opio-logo {
+    background-image: url('../img/opio-blue-logo.png');
+    position: absolute; 
+    right: -30px; 
+    top: 2px; 
+    display: flex; 
+    text-align: right; 
+    min-width: 100px; 
+    min-height: 24px; 
+    background-size: contain; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    margin-right: 0px;
+}
+
+.admin-widget-body .c-rating-widget-container {
+    display: flex;
+    background: #ffffff;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column; 
+    padding-right: 0px; 
+    margin-top: 0px;
+}
+
+.admin-widget-body .c-rating-row-1 {
+    display: flex;
+    align-items: center;
+    margin-left: 7px;
+}
+
+.admin-widget-body .c-rating-row-2 {
+    display: flex; 
+    flex-direction: column;
+    line-height: 30px; 
+}
+
+.admin-widget-body .c-rating-row-3 {
+    display: flex; margin-left: 5px;
+}
+
+.admin-widget-body .c-rating-row-4 {
+    display: flex;
+    align-items: center;
+    margin-top: 3px;
+    margin: 0 auto;
+}
+
+.admin-widget-body .c-vertical-divider {
+    display: none;
+}
+
+.admin-widget-body .c-pwd-span {
+    font-size: 12px;
+}
+
+.admin-widget-body .c-pwd-div {
+    display: flex; 
+    align-items: center; 
+    min-width: 80px; 
+    min-height: 30px; 
+    background-size: contain; 
+    background-position: center center; 
+    background-repeat: no-repeat;
+}
+
+.admin-widget-body .c-rating-r-row-1 {
+    overflow: hidden; 
+    position: relative;
+}
+
+.admin-widget-body .c-rating-r-row-2 {
+    display: flex; 
+    margin-left: 5px;
+}
+
+.admin-widget-body .c-rating-row-span {
+    display: flex; 
+    margin-top: -2px; 
+    font-size: 20px; 
+    font-weight: 700;
+}
+
+.admin-widget-body .c-see-all-div {
+    display: flex;
+    margin-top: -8px;
+    text-align: center;
+    justify-content: center;
+}
+
+.admin-widget-body .c-see-all-span {
+    display: flex;
+    font-size: 14px;
+    align-items: flex-end;
+}
+
+.admin-widget-body .c-write-rev-container {
+    width: 100%; 
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center; 
+    padding: 0px 8px; 
+    text-align: center;
+}
+
+.admin-widget-body .c-write-rev-outer-div {
+    border-radius: 2px; 
+    display: inline-block; 
+    height: 40px; 
+    line-height: 40px; 
+    margin-left: 0px; 
+    text-align: center; 
+    cursor: pointer; 
+    padding: 0px; 
+    font-weight: 400; 
+    font-size: 14px; 
+    color: #ffffff; 
+    border: none; 
+    background-color: #0078ca; 
+    width: 150px; 
+    position: relative; 
+    transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1); 
+    user-select: none;
+}
+
+.admin-widget-body .c-write-rev-inner-div {
+    display: inline-block; 
+    position: relative; 
+    height: 100%;
+}
+
+.admin-widget-body .c-slider-button {
+    width: 36px;
+    height: 36px;
+    margin: 0 2px;
+    cursor: pointer;
+}
+/** Horizontal carousel slider styles ends here*/
+
+/** Slick slider style here */
+
+.admin-widget-body .testimonial {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3d5a80;
+    color: #3d5a80;
+
+    &-slide {
+        padding: 40px 20px;
+        height: 260px;
+    }
+
+    &_box {
+        &-top {
+            background-color: #e0fbfc;
+            padding: 30px;
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            box-shadow: 5px 5px 20px rgba(152, 193, 217, 0.493);
+        }
+
+        &-icon {
+            padding: 10px 0;
+            i {
+                font-size: 25px;
+                color: #14213d;
+            }
+        }
+
+        &-text {
+            padding: 10px 0;
+            p {
+                color: #293241;
+                font-size: 14px;
+                line-height: 20px;
+                margin-bottom: 0;
+            }
+        }
+
+        &-img {
+            padding: 20px 0 10px;
+            display: flex;
+            justify-content: center;
+
+            img {
+                width: 70px;
+                height: 70px;
+                border-radius: 50px;
+                border: 2px solid #e5e5e5;
+            }
+        }
+
+        &-name {
+            padding-top: 10px;
+
+            h4 {
+                font-size: 20px;
+                line-height: 25px;
+                color: #293241;
+                margin-bottom: 0;
+            }
+        }
+
+        &-job {
+            p {
+                color: #293241;
+                font-size: 14px;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+                line-height: 20px;
+                font-weight: 300;
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+/* Add your other styles here */
+@media (min-width: 280px) and (max-width: 400px) {
+    /** Horizontal slider styles starts here*/
+
+    .admin-widget-body {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+        margin: 20px auto;
+        width: auto;
+        max-width: 350px;
+        height: 360px;
+        overflow: hidden; /* Prevent scrolling when the lightbox is open */
+    }
+
+    .admin-widget-body .slider-container {
+        display: flex;
+        height: auto;
+        overflow-x: auto;
+        scrollbar-width: thin;
+        scrollbar-color: #ccc #f0f0f0;
+        padding: 0px;
+        background: #ffffff;
+        margin: auto;
+        justify-content: center;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .opio-vertical {
+        display: flex;
+        height: 500px;
+        width: 300px;
+        flex-direction: column;
+        border: 2px solid #A9B7BF;
+        border-radius: 3px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .admin-opio-carousel {
+        display: block;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+        margin: 20px auto;
+        width: 310px;
+        height: 360px;
+        overflow: hidden; /* Prevent scrolling when the lightbox is open */
+    }
+
+    .admin-widget-body .review-tile {
+        margin: 0;
+    }
+
+    .admin-widget-body .vertical-divider {
+        height: 42px;
+        width: 1px;
+        background-color: #9b9b9b; /* Change the color as needed */
+        margin: 0px 5px;
+    }
+
+    .admin-widget-body .rating-text {
+        display: flex; 
+        margin-top: 0px; 
+        font-size: 20px; 
+        font-weight: 700;
+    }
+
+    /** widget 2nd part */
+    .admin-widget-body .w-opio-logo-container {
+        display: flex; 
+        flex: 35% 0 0;
+        justify-content: end;
+        margin-top: 6px;
+        margin-left: 0px;
+    }
+
+    .admin-widget-body .pwd-opio-logo {
+        min-width: 80px; 
+        min-height: 35px; 
+    }
+
+    .admin-widget-body .rating-widget {
+        display: flex; 
+        flex-direction: column;
+        flex: 0 0 55%;
+    }
+
+    .admin-widget-body .write-review-btn-box {
+        display: flex; 
+        margin-left: 5px;
+    }
+
+    .admin-widget-body .rating-stars-wd, .admin-widget-body .rating-stars-wd-c {
+        width: 20px; 
+        height: 20px;
+    }
+
+    .admin-widget-body .rating-widget-part {
+        flex-wrap: wrap;
+        height: 140px;
+        padding-bottom: 40px;
+        /* margin-top: 20px; */
+    }
+
+    .lb-reviewbox {
+        width: 80%;
+    }
+
+    .lb-empTagContainer {
+        grid-template-columns: auto;
+    }
+
+    .lb-property-logo {
+        width: 60px;
+        height: 24px;
+        min-width: 60px;
+        min-height: 24px;
+    }
+
+    /** Horizontal slider styles ends here*/
+
+    /** Horizontal Carousel slider styles starts here */
+    .admin-widget-body .c-rating-widget-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0px;
+        height: auto;
+        margin-top: -10px;
+    }
+
+    .admin-widget-body .c-rating-row-1 {
+        display: flex;
+        align-items: center;
+        margin-left: 7px;
+        flex: 25% 0 0;
+        margin-top: 0px;
+    }
+
+    .admin-widget-body .c-rating-row-2 {
+        display: flex;
+        flex-direction: column;
+        flex: 0 0 55%;
+        margin-top: 10px;
+    }
+
+    .admin-widget-body .c-rating-row-3 {
+        display: flex;
+        margin-left: 16px;
+        margin-top: -24px;
+        justify-content: flex-start;
+    }
+
+    .admin-widget-body .c-rating-row-4 {
+        display: flex;
+        margin: 0 auto;
+        margin-top: -22px;
+        justify-content: end;
+    }
+
+    .admin-widget-body .c-pwd-div {
+        min-width: 60px;
+        width: 60px; 
+        min-height: 30px; 
+        height: 30px;
+        margin-left: 36px;
+    }
+
+    .admin-widget-body .c-rating-row-span {
+        font-size: 20px;
+    }
+
+    .admin-widget-body .c-vertical-divider {
+        display: block;
+        height: 42px;
+        width: 1px;
+        background-color: #9b9b9b; /* Change the color as needed */
+        margin: 0px 10px;
+    }
+
+    .admin-widget-body .c-see-all-div {
+        display: flex;
+        margin-top: -8px;
+        justify-content: start;
+    }
+
+    .admin-widget-body .close-button {
+        top: 15%;
+        right: 10%;
+    }
+
+
+}
+
+@media (min-width: 401px) and (max-width: 767px) {
+    /** Horizontal slider styles starts here*/
+
+    .admin-widget-body {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+        margin: 20px auto;
+        width: auto;
+        max-width: 390px;
+        height: 360px;
+        overflow: hidden; /* Prevent scrolling when the lightbox is open */
+    }
+
+    .admin-widget-body .slider-container {
+        display: flex;
+        height: auto;
+        overflow-x: auto;
+        scrollbar-width: thin;
+        scrollbar-color: #ccc #f0f0f0;
+        padding: 0px;
+        background: #ffffff;
+        margin: auto;
+        justify-content: center;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .opio-vertical {
+        display: flex;
+        height: 500px;
+        width: 300px;
+        flex-direction: column;
+        border: 2px solid #A9B7BF;
+        border-radius: 3px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .admin-opio-carousel {
+        display: block;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+        margin: 20px auto;
+        width: 390px;
+        height: 360px;
+        overflow: hidden; /* Prevent scrolling when the lightbox is open */
+    }
+
+    .admin-widget-body .review-tile {
+        margin: 0;
+    }
+
+    .admin-widget-body .vertical-divider {
+        height: 42px;
+        width: 1px;
+        background-color: #9b9b9b; /* Change the color as needed */
+        margin: 0px 5px;
+    }
+
+    .admin-widget-body .c-see-all-div {
+        display: flex;
+        margin-top: -8px;
+        justify-content: start;
+    }
+
+    .admin-widget-body .rating-text {
+        display: flex; 
+        margin-top: 0px; 
+        font-size: 20px; 
+        font-weight: 700;
+    }
+
+    /** widget 2nd part */
+    .admin-widget-body .w-opio-logo-container {
+        display: flex; 
+        flex: 35% 0 0;
+        justify-content: end;
+        margin-top: 6px;
+        margin-left: 0px;
+    }
+
+    .admin-widget-body .pwd-opio-logo {
+        min-width: 80px; 
+        min-height: 35px; 
+    }
+
+    .admin-widget-body .rating-widget {
+        display: flex; 
+        flex-direction: column;
+        flex: 0 0 55%;
+    }
+
+    .admin-widget-body .write-review-btn-box {
+        display: flex; 
+        margin-left: 5px;
+    }
+
+    .admin-widget-body .rating-stars-wd, .admin-widget-body .rating-stars-wd-c {
+        width: 20px; 
+        height: 20px;
+    }
+
+    .admin-widget-body .rating-widget-part {
+        flex-wrap: wrap;
+        height: 140px;
+        padding-bottom: 40px;
+        /* margin-top: 20px; */
+    }
+
+    .lb-reviewbox {
+        width: 80%;
+    }
+
+    .lb-empTagContainer {
+        grid-template-columns: auto;
+    }
+
+    .lb-property-logo {
+        width: 60px;
+        height: 24px;
+        min-width: 60px;
+        min-height: 24px;
+    }
+
+    /** Horizontal slider styles ends here*/
+
+    /** Horizontal Carousel slider styles starts here */
+    .admin-widget-body .c-rating-widget-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0px;
+        height: auto;
+        margin-top: -10px;
+    }
+
+    .admin-widget-body .c-rating-row-1 {
+        display: flex;
+        align-items: center;
+        margin-left: 7px;
+        flex: 25% 0 0;
+        margin-top: 0px;
+    }
+
+    .admin-widget-body .c-rating-row-2 {
+        display: flex;
+        flex-direction: column;
+        flex: 0 0 55%;
+        margin-top: 10px;
+    }
+
+    .admin-widget-body .c-rating-row-3 {
+        display: flex;
+        margin-left: 46px;
+        margin-top: -24px;
+        justify-content: flex-start;
+    }
+
+    .admin-widget-body .c-rating-row-4 {
+        display: flex;
+        margin: 0 auto;
+        margin-top: -22px;
+        justify-content: end;
+    }
+
+    .admin-widget-body .c-pwd-div {
+        min-width: 60px;
+        width: 60px; 
+        min-height: 30px; 
+        height: 30px;
+        margin-left: 36px;
+    }
+
+    .admin-widget-body .c-rating-row-span {
+        font-size: 20px;
+    }
+
+    .admin-widget-body .c-vertical-divider {
+        display: block;
+        height: 42px;
+        width: 1px;
+        background-color: #9b9b9b; /* Change the color as needed */
+        margin: 0px 10px;
+    }
+
+    .admin-widget-body .close-button {
+        top: 15%;
+        right: 10%;
+    }
+
+}
+
+/* CSS for tablets (landscape) */
+
+@media (min-width: 768px) and (max-width: 800px) {
+    .admin-widget-body {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+        margin: 20px auto;
+        width: auto;
+        max-width: 750px;
+        height: 310px;
+        overflow: hidden; /* Prevent scrolling when the lightbox is open */
+    }
+}
+
+@media (min-width: 801px) and (max-width: 860px) {
+    .admin-widget-body {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+        margin: 20px auto;
+        width: auto;
+        max-width: 780px;
+        height: 310px;
+        overflow: hidden; /* Prevent scrolling when the lightbox is open */
+    }
+}
+
+@media (min-width: 861px) and (max-width: 950px) {
+    .admin-widget-body {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+        margin: 20px auto;
+        width: auto;
+        max-width: 860px;
+        height: 310px;
+        overflow: hidden; /* Prevent scrolling when the lightbox is open */
+    }
+}
+
+@media (min-width: 951px) and (max-width: 1024px) {
+    .admin-widget-body {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+        margin: 20px auto;
+        width: 1000px;
+        height: 310px;
+        overflow: hidden; /* Prevent scrolling when the lightbox is open */
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1140px) {
+    /* Add your tablet-specific styles here */
+    /** Horizontal slider styles starts here*/
+
+    .admin-widget-body {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+        margin: 20px auto;
+        width: auto;
+        max-width: 1140px;
+        height: 310px;
+        overflow: hidden; /* Prevent scrolling when the lightbox is open */
+    }
+
+    .admin-widget-body .slider-container {
+        display: flex;
+        height: auto;
+        overflow-x: auto;
+        scrollbar-width: thin;
+        scrollbar-color: #ccc #f0f0f0;
+        padding: 0px;
+        background: #ffffff;
+        margin: auto;
+        justify-content: center;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .opio-vertical {
+        display: flex;
+        height: 500px;
+        width: 300px;
+        flex-direction: column;
+        border: 2px solid #A9B7BF;
+        border-radius: 3px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .admin-opio-carousel {
+        display: block;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+        margin: 20px auto;
+        width: auto;
+        height: 300px;
+        overflow: hidden; /* Prevent scrolling when the lightbox is open */
+    }
+
+    /** Horizontal Carousel slider styles starts here */
+    .admin-widget-body .c-rating-widget-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0px;
+        height: auto;
+    }
+
+    .admin-widget-body .c-rating-row-1 {
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .admin-widget-body .c-rating-row-2 {
+        display: flex;
+        flex-direction: column;
+        margin-top: 24px;
+    }
+
+    .admin-widget-body .c-rating-row-3 {
+        display: flex;
+        margin-left: 20px;
+        margin-top: 21px;
+        justify-content: flex-start;
+    }
+
+    .admin-widget-body .c-rating-row-4 {
+        display: flex;
+        margin: 0 auto;
+        margin-top: 24px;
+    }
+
+    .admin-widget-body .c-pwd-div {
+        min-width: 80px;
+        width: 80px; 
+        min-height: 30px; 
+        height: 34px;
+        margin-left: 50px;
+    }
+
+    .admin-widget-body .c-rating-row-span {
+        font-size: 20px;
+    }
+
+    .admin-widget-body .c-vertical-divider {
+        display: block;
+        height: 42px;
+        width: 1px;
+        background-color: #9b9b9b; /* Change the color as needed */
+        margin: 0px 10px;
+    }
+
+}
